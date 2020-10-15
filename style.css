@@ -1,0 +1,126 @@
+/* resets */
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fafc;
+  padding: 20px;
+}
+
+.chirpus {
+  color: #000;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #69696a;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.button {
+  background-color: black;
+  border-radius: 25px;
+  display: block;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.about-text {
+  border-left: 3px solid black;
+  padding-left: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(247, 193, 162, 0.7);
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.footer-nav {
+  float: right;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-link {
+    padding: 20px;
+  }
+  .main-container {
+    display: flex;
+    margin-top: 100px;
+    position: absolutes;
+  }
+
+  .text-container {
+    flex: 1;
+  }
+
+  .circle-container {
+    flex: 1;
+    position: relative;
+    /* border: 1px solid red; helps denotes flex*/
+  }
+  .circle-one {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(247, 136, 167, 0.6);
+    border-radius: 50%;
+    position: absolute;
+    right: 100px;
+  }
+
+  .circle-two {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(247, 193, 162, 0.7);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 150px;
+  }
+  .circle-three {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(207, 130, 213, 0.6);
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+  }
+}
+/* border radius 50% in a div to make the circles */
+/* position relative
+postion absolute
+offsets top left botton right */
